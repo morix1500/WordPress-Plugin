@@ -29,7 +29,7 @@ class Purgely_Surrogate_Key_Collection
         // Get all taxonomy terms and author info if on a single post.
         $term_keys = array();
 
-        if ($wp_query->is_single()) {
+        if ($wp_query->is_single() || $wp_query->is_page()) {
             $taxonomies = apply_filters('purgely_taxonomy_keys', (array)get_taxonomies());
 
             foreach ($taxonomies as $taxonomy) {
