@@ -79,6 +79,7 @@ class Purgely_Related_Surrogate_Keys
             'tm-post',
             'tm-home',
             'tm-feed',
+            'tm-404',
             'holos'
         );
     }
